@@ -3,9 +3,7 @@
 <html>
 <meta charset="utf-8">
 
- <style>
-   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
- </style>
+   <link href="index.CSS" rel="stylesheet">
 
 <link rel="stylesheet" href="Projekthemsida.CSS"/>
 <script src="Projekthemsida.js"></script>
