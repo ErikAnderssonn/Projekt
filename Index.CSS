@@ -1,0 +1,75 @@
+body{
+  background-image: url(http://www.terrapatria.org/p/2018/02/food-wallpapers-hd-wallpaper-wiki-in-food-menu-background-hd.jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px 700px;
+  background-color: #cccccc;
+  }
+
+.heading
+{
+  font-size: 50px;
+  color: white;
+  font-family:'Abhaya Libre', serif;
+  width: 300px;
+  text-decoration:underline;
+  padding: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+  ul li {
+      display:inline-block;
+      margin-left: 60px;
+      margin-right: auto;
+  }
+
+input[type=submit] {
+      padding:20px 40px;
+      background: none;
+      border:0 none;
+      -webkit-border-radius: 20px;
+      margin-left: auto;
+      margin-right:auto;
+      margin-bottom: 200px;
+      margin-top: 200px;
+      border-radius: 2px;
+      cursor:pointer;
+      font-family:'Abhaya Libre', serif;
+      font-size: 50px;
+      color: white;
+      width: 300px;
+      border: 3px white;
+      border-style: double;
+      padding: 20px;
+}
+
+.navigation a {
+   padding:20px 40px;
+   border:0 none;
+   -webkit-border-radius: 20px;
+   margin-left: auto;
+   margin-right:auto;
+   margin-bottom: 200px;
+   margin-top: 200px;
+   border-radius: 2px;
+   cursor:pointer;
+   font-family:'Abhaya Libre', serif;
+   font-size: 50px;
+   color: white;
+   width: 500px;
+   border: 3px white;
+   border-style: double;
+   padding: 20px;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: black;
+}
+
+.navigation input:hover {
+  background-color: white;
+  color: black;
+}
