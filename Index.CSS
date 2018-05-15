@@ -7,11 +7,12 @@ body{
 
 .heading
 {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
-  font-family:'Abhaya Libre', serif;
+  font-family: 'Work Sans' sans-serif;
   width: 300px;
-  text-decoration:underline;
+  text-decoration:none;
+  text-transform: uppercase;
   padding: 20px;
   border-radius: 2px;
   margin-left: auto;
@@ -20,56 +21,83 @@ body{
 }
 
   ul li {
-      display:inline-block;
-      margin-left: 60px;
-      margin-right: auto;
+      max-width: 500px;
+      margin: auto;
+      text-align: center;
+      display: inline-block;
+      margin-top: 220px;
   }
 
-input[type=submit] {
-      padding:20px 40px;
+.mybutton {
+
       background: none;
       border:0 none;
-      -webkit-border-radius: 20px;
-      margin-left: auto;
-      margin-right:auto;
-      margin-bottom: 200px;
-      margin-top: 200px;
+      -webkit-border-radius: 10px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
       border-radius: 2px;
       cursor:pointer;
       font-family:'Abhaya Libre', serif;
-      font-size: 50px;
+      font-size: 25px;
       color: white;
-      width: 300px;
+      width: 290px;
       border: 3px white;
+      padding-top: 30px;
+      padding-bottom: 30px;
       border-style: double;
-      padding: 20px;
-}
-
-.navigation a {
-   padding:20px 40px;
-   border:0 none;
-   -webkit-border-radius: 20px;
-   margin-left: auto;
-   margin-right:auto;
-   margin-bottom: 200px;
-   margin-top: 200px;
-   border-radius: 2px;
-   cursor:pointer;
-   font-family:'Abhaya Libre', serif;
-   font-size: 50px;
-   color: white;
-   width: 500px;
-   border: 3px white;
-   border-style: double;
-   padding: 20px;
-}
-
-.navigation a:hover {
-    background-color: white;
-    color: black;
 }
 
 .navigation input:hover {
-  background-color: white;
-  color: black;
+  background-color: #A0522D;
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+/* CreateProfile.HTML */
+
+form ul
+{
+margin-right: 40px;
+}
+
+form li {
+list-style: none;
+margin: 10px;
+font-family: 'Abhaya Libre', serif;
+font-size: 20px;
+color: white;
+}
+
+form label {
+display: block;
+}
+
+form h3 {
+width: 100%;
+text-align: center;
+}
+
+.blimedlem
+{
+    margin-right: 10px;
+    padding:5px 15px;
+    background: none;
+    border: 3px solid white;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    width: 100px;
+}
+
+#wrapper {
+   margin: auto;
+   width: 300px;
+   border: 3px solid white;
+   border-radius: 5px;
+   padding: 22px;
+   background-color: none;
+   text-align: center;
 }
