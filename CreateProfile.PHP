@@ -10,6 +10,9 @@
  <link rel="stylesheet" href="Index.CSS"/>
  <script src="Index.js"></script>
 
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+<script type="text/javascript">
+$/
 
  <body>
 
@@ -36,7 +39,7 @@
 
      <li>
        <label for="lösenord"> Lösenord: </label>
- 	      <input type="text" id="password" name="lösenord"/>
+ 	      <input type="password" id="password" name="lösenord"/>
      </li>
 
     <li>
@@ -45,7 +48,7 @@
     </li>
 
     <li>
-        <input type="submit" class='blimedlem' value="Bli Medlem"/>
+        <input type="submit" id="login" class='blimedlem' value="Bli Medlem"/>
     </li>
 
    </ul>
