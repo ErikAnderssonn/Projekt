@@ -26,7 +26,9 @@
   </li>
 
   <li>
-    <a href= "CreateProfile.HTML">
+    <?php
+    include: "CreateProfile.PHP"
+    ?>
     <input type="submit" class='mybutton' value="Registrera"/>
      </a>
   </li>
