@@ -13,7 +13,7 @@
       <input type="text" placeholder="Email"/>
       <input type="password" placeholder="Lösenord"/>
       <button>Logga in</button>
-      <p class="message">Inte medlem? <a href="#">Skapa konto</a></p>
+      <p class="message">Inte medlem? <a href="CreateProfile.php">Skapa konto</a></p>
     </form>
   </div>
 </div>
