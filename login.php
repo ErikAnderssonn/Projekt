@@ -22,11 +22,11 @@
     </li>
      <li>
        <label for="email"> Email:  </label>
-      <input id="email" name="email"/>
+      <input type="email" id="email" name="email"/>
      </li>
      <li>
        <label for="lösenord"> Lösenord:  </label>
-       <input id="password" name="password"/>
+       <input type="password" id="password" name="lösenord"/>
      </li>
      <li>
          <input type="submit" id="login" class='blimedlem' value="Logga in"/>
