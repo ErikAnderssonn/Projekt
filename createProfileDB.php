@@ -51,8 +51,9 @@ $result = $mysqli -> query($sql);
 
 
 //insertUserQuery($email, $hash, $unique_salt, $förnamn, $efternamn );
-//header ("Refresh: 3; URL=index.php");
+header ("Refresh: 3; URL=index.php");
 echo "User created!";
+exit;
 
 
  ?>

@@ -32,27 +32,8 @@ if (md5($salt . $pw) === $password)
 }
 else
 {
-  echo "Du är helt dum i huvudet:   $salt + $pw = $password + $hash";
+  echo "Du är helt dum i huvudet $salt + $pw + $password";
 }
 
-/*
-function saltQuery($email)
-{
-  $query = "SELECT Salt FROM Användare WHERE Email = ('$email')";
-  $salt = $mysqli->query($query);
-  $row = $salt->fetch_assoc();
-  return $salt = $row['Salt'];
-}
-
-// Returns the hashed password for the given email.
-
-function pwQuery($email)
-{
-  $query = "SELECT Password FROM Användare WHERE Email = '$email'";
-  $password = $mysqli->query($query);
-  $row = $password->fetch_assoc();
-  return $password = $row['Password'];
-}
-*/
 }
  ?>
