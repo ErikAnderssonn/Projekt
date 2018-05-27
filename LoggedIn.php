@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<?php
+session_start();
+if(isset($_SESSION['Email']))
+{
+   $useremail = $_SESSION['Email'];
+}
+else {
+header('Location: index.php');
+}
+?>
+
 <html>
 <meta charset="utf-8">
 
@@ -14,7 +25,6 @@
 <div class="navigation">
 
   <li>
-    <a href= "nyttrecept.php">
     <input type="submit" class='mybutton' value="Tombola"/>
   </li>
 
@@ -23,15 +33,9 @@
   </li>
 
   <li>
-    <a href= "login.php">
-    <input type="submit" class='mybutton' value="Logga in"/>
+    <input type="submit" class='mybutton' value="Min sida"/>
   </li>
 
-  <li>
-    <a href= "CreateProfile.php">
-    <input type="submit" class='mybutton' value="Registrera"/>
-     </a>
-  </li>
 
 </ul>
 

@@ -1,0 +1,105 @@
+body{
+  background-image: url(http://www.terrapatria.org/p/2018/02/food-wallpapers-hd-wallpaper-wiki-in-food-menu-background-hd.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  }
+
+.heading
+{
+  font-size: 30px;
+  color: white;
+  font-family: 'Work Sans' sans-serif;
+  width: 300px;
+  text-decoration:none;
+  text-transform: uppercase;
+  padding: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+  ul li {
+
+      max-width: 500px;
+      text-align: center;
+      margin-top: 220px;
+      display:inline-block;
+      margin-left: 5px;
+      margin-right: auto;
+  }
+
+.mybutton {
+
+      background: none;
+      border:0 none;
+      -webkit-border-radius: 10px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      border-radius: 2px;
+      cursor:pointer;
+      font-family:'Abhaya Libre', serif;
+      font-size: 25px;
+      color: white;
+      width: 290px;
+      border: 3px white;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-style: double;
+}
+
+.navigation input:hover {
+  background-color: rgba(228, 221, 157, 0.76);
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+
+/* CreateProfile.HTML */
+
+form ul
+{
+margin-right: 40px;
+}
+
+form li {
+list-style: none;
+margin: 10px;
+font-family: 'Abhaya Libre', serif;
+font-size: 20px;
+color: white;
+}
+
+form label {
+display: block;
+}
+
+form h3 {
+width: 100%;
+text-align: center;
+}
+
+.blimedlem
+{
+    margin-right: 10px;
+    padding:5px 15px;
+    background: none;
+    border: 3px solid white;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    width: 100px;
+}
+
+#wrapper {
+   margin: auto;
+   width: 300px;
+   border: 3px solid white;
+   border-radius: 5px;
+   padding: 22px;
+   background-color: none;
+   text-align: center;
+}

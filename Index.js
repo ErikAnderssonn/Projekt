@@ -2,10 +2,10 @@ function checkInfo()
 {
 var name = document.getElementById('name').value;
 var email = document.getElementById('email').value;
-var comments = document.getElementById('comments').value;
+var  = document.getElementById('comments').value;
 var password = document.getElementById('password').value;
 
-if(name == "" || email == "" || comments == "" || password == "") {
+if(name == "" || email == "" || password == "") {
   alert('Fyll i samtliga fält');
   return false;
 }
@@ -16,3 +16,7 @@ if(snabelApos<1 || punktPos<snabelApos+2 || punktPos+2>=x.length) {
   return false;
 }
 }
+
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});

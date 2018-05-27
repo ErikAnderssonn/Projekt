@@ -1,31 +1,44 @@
+<!DOCTYPE html>
+
 <html>
 <meta charset="utf-8">
 
-   <link href="index.CSS" rel="stylesheet">
+ <style>
+   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
+ </style>
 
-<link rel="stylesheet" href="Index.CSS"/>
-<script src="Index.js"></script>
+ <link rel="stylesheet" href="Index.CSS"/>
+ <script src="Index.js"></script>
 
-<h1 class= "heading" > Studentmat </h1>
+ <body>
 
-<ul>
+ <div id="wrapper">
+ <form action="/index.php" method="post" onsubmit= "return checkInfo()">
 
-<div class="navigation">
+ <body>
+  <ul>
+    <li>
+       <h2> Recept: </h2>
+    </li>
+     <li>
+       <label for="mat"> Maträtt:  </label>
+         <input id="name" name="name"/>
+     </li>
+     <li>
+       <label for="ingredienser"> Ingredienser: </label>
+         <textarea id="recipe" name="recipecolumn" rows="5"></textarea>
+     </li>
+     <li>
+       <label for="tillagning"> Tillagning:  </label>
+ 	      <textarea id="recipe" name="recipecolumn" rows="7"></textarea>
+     </li>
+     <li>
+         <input type="submit" id="login" class='blimedlem' value="Skicka!"/>
+     </li>
 
-  Pris/matlåda <br>
-  <input type="text" name="Name" id="Name">
-  <br>
-  Rubrik<br>
-  <input type="text" id="comment" name="comment" form="usrform">
-  <br>
-  Recept
-  <br>
-  <textarea name="message" rows="20" cols="18">Ingredienser
--
--
-Utförande
--
--</textarea>
-  <br>
-  <input type="submit" class='blimedlem' value="Skicka"/>
-</ul>
+   </ul>
+
+ </div>
+ </body>
+ </form>
+ </html>
