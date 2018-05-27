@@ -13,7 +13,7 @@
  <body>
 
  <div id="wrapper">
- <form action="/index.php" method="post" onsubmit= "return checkInfo()">
+ <form action="createProfileDB.php" method="post" onsubmit= "return checkInfo()">
 
  <body>
   <ul>
@@ -38,10 +38,6 @@
  	      <input type="password" id="password" name="lösenord"/>
      </li>
 
-    <li>
-    	<label for="comments"> Om dig själv: </label>
-      	<textarea id="comments" name="comments" rows="5"> </textarea>
-    </li>
 
     <li>
         <input type="submit" id="login" class='blimedlem' value="Bli Medlem"/>
