@@ -39,7 +39,7 @@ function validate_email($Mail)
 
   function saltQuery($email)
   {
-  	$query = "SELECT Salt FROM Användare WHERE Email = ('".$email."')";
+  	$query = "SELECT Salt FROM Användare WHERE Email = ('$email')";
   	$salt = $mysqli->query($query);
   	$row = $salt->fetch_assoc();
   	return $salt = $row['Salt'];
@@ -49,11 +49,13 @@ function validate_email($Mail)
 
   function pwQuery($email)
   {
-  	$query = "SELECT Password FROM Användare WHERE Email = ('".$email."')";
+  	$query = "SELECT Password FROM Användare WHERE Email = ('$email')";
   	$password = $mysqli->query($query);
   	$row = $password->fetch_assoc();
   	return $password = $row['Password'];
   }
+
+
 
 
  ?>

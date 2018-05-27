@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $ettPassword = ($_POST["lösenord"]);
 
     $salt = unique_salt();
-    $hash = sha1($unique_salt . $ettPassword);
+    $hash = md5($salt . $ettPassword);
 
 
     //__________________ För & Efternamn _______________
