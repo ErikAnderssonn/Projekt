@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<?php
+session_start();
+if(isset($_SESSION['Email']))
+{
+   $useremail = $_SESSION['Email'];
+}
+else {
+header('Location: index.php');
+}
+?>
+
 <html>
 <meta charset="utf-8">
 
@@ -7,14 +18,13 @@
 
 <link rel="stylesheet" href="Index.CSS"/>
 <script src="Index.js"></script>
-<center>
+
  <h1 class= "heading" > Studentmat </h1>
 
 <ul>
 <div class="navigation">
 
   <li>
-    <a href= "nyttrecept.php">
     <input type="submit" class='mybutton' value="Tombola"/>
   </li>
 
@@ -23,17 +33,12 @@
   </li>
 
   <li>
-    <input type="submit" class='mybutton' value="Logga in"/>
+    <input type="submit" class='mybutton' value="Min sida"/>
   </li>
 
-  <li>
-    <a href= "CreateProfile.php">
-    <input type="submit" class='mybutton' value="Registrera"/>
-     </a>
-  </li>
 
 </ul>
-</center>
+
 </div>
 
 <form action="" method="" onsubmit= "">
