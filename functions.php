@@ -34,7 +34,7 @@ function validate_email($Mail)
   function insertUserQuery($email, $hash, $salt, $förnamn, $efternamn)
   {
   	$query = "INSERT INTO Användare(Förnamn, Efternamn, Email, Password, Salt) VALUES ('".$förnamn."', '".$efternamn."', '".$email."','".$hash."','".$salt."')";
-  	$mysqli -> query($query);
+  	$result = $mysqli -> query($query);
   }
 
   function saltQuery($email)

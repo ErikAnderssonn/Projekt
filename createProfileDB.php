@@ -1,12 +1,12 @@
 <?php
 
-
+include "connect.php";
 include "functions.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
   //__________________ MAIL _______________
-  $Mail = createPhpVar($_POST["email"]);
+  $Mail = ($_POST["email"]);
 
 
 	if (empty($Mail))
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     //__________________ LÖSEN _______________
     $ettPassword = ($_POST["lösenord"]);
 
-    $unique_salt = unique_salt();
+    $salt = unique_salt();
     $hash = sha1($unique_salt . $ettPassword);
 
 
@@ -45,11 +45,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 }
 //__________________ skicka till DB _______________
 
-echo $förnamn;
-/*
-insertUserQuery($email, $hash, $unique_salt, $förnamn, $efternamn );
-header ("Refresh: 3; URL=login.php");
+$sql = "INSERT INTO Användare(Förnamn, Efternamn, Email, Password, Salt) VALUES ( '$förnamn', '$efternamn', '$email','$hash','$salt')";
+$result = $mysqli -> query($sql);
+
+
+//insertUserQuery($email, $hash, $unique_salt, $förnamn, $efternamn );
+header ("Refresh: 3; URL=index.php");
 echo "User created!";
-*/
+
 
  ?>
