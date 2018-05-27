@@ -1,19 +1,43 @@
+<!DOCTYPE html>
+
+<html>
 <meta charset="utf-8">
-   <link href="loginCSS.css" rel="stylesheet">
-<div class="login-page">
-  <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
-    </form>
-    <form class="login-form" action="loginDB.php" method="post">
-      <input type="text" name="email" placeholder="Email"/>
-      <input type="password" name="lösenord" placeholder="Lösenord"/>
-      <button>Logga in</button>
-      <p class="message">Inte medlem? <a href="CreateProfile.php">Skapa konto</a></p>
-    </form>
-  </div>
-</div>
+
+ <style>
+   <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
+ </style>
+
+ <link rel="stylesheet" href="Index.CSS"/>
+ <script src="Index.js"></script>
+
+ <body>
+
+ <div id="wrapper">
+ <form action="loginDB.php" method="post" >
+
+ <body>
+  <ul>
+    <li>
+       <h2> Logga In: </h2>
+    </li>
+     <li>
+       <label for="email"> Email:  </label>
+      <input id="email" name="email"/>
+     </li>
+     <li>
+       <label for="lösenord"> Lösenord:  </label>
+       <input id="password" name="password"/>
+     </li>
+     <li>
+         <input type="submit" id="login" class='blimedlem' value="Logga in"/>
+     </li>
+     <li>
+     <p class="message">Inte medlem? <a href="CreateProfile.php">Skapa konto</a></p>
+     </li>
+
+   </ul>
+
+ </div>
+ </body>
+ </form>
+ </html>
