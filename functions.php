@@ -1,4 +1,6 @@
+
 <?php
+/*
 $user = 'root';
 $password = 'root';
 $db = 'Projekt';
@@ -10,7 +12,8 @@ $mysqli = new mysqli("$host:$port",$user, $password, $db);
  if (!$mysqli) {
    die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
  }
-
+*/
+include "connect.php";
 function unique_salt($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);

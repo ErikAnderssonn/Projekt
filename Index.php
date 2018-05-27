@@ -14,7 +14,6 @@
 <div class="navigation">
 
   <li>
-    <a href= "nyttrecept.php">
     <input type="submit" class='mybutton' value="Tombola"/>
   </li>
 

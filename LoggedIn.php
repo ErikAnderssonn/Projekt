@@ -29,6 +29,11 @@ header('Location: index.php');
   </li>
 
   <li>
+    <input type="submit" class='mybutton' value="Skapa recept"/>
+    <a href= "nyttrecept.php">
+  </li>
+
+  <li>
     <input type="submit" class='mybutton' value="Sök ingredienser"/>
   </li>
 
