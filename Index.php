@@ -7,7 +7,7 @@
 
 <link rel="stylesheet" href="Index.CSS"/>
 <script src="Index.js"></script>
-
+<center>
  <h1 class= "heading" > Studentmat </h1>
 
 <ul>
@@ -22,7 +22,6 @@
   </li>
 
   <li>
-    <a href= "login.php">
     <input type="submit" class='mybutton' value="Logga in"/>
   </li>
 
@@ -33,7 +32,7 @@
   </li>
 
 </ul>
-
+</center>
 </div>
 
 <form action="" method="" onsubmit= "">
