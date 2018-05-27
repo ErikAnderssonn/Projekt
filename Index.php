@@ -23,6 +23,7 @@
   </li>
 
   <li>
+    <a href= "login.php">
     <input type="submit" class='mybutton' value="Logga in"/>
   </li>
 
