@@ -21,6 +21,8 @@ header('Location: index.php');
 
  <h1 class= "heading" > Studentmat </h1>
 
+ <input type="submit" class='mybutton' href="Index.PHP" value="Log Out"/>
+
 <ul>
 <div class="navigation">
 
