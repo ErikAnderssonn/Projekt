@@ -7,6 +7,10 @@ function generateRandomString($length = 10) {
         $randomString .= $characters[rand(0, $charactersLength - 1)];
     }
     return $randomString;
+
+
 }
+
+
 
 ?>
