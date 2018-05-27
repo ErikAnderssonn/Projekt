@@ -1,5 +1,4 @@
-<?php
-$user = 'root';
+*/$user = 'root';
 $password = 'root';
 $db = 'Projekt';
 $host = 'localhost';
@@ -11,3 +10,17 @@ $mysqli = new mysqli("$host:$port",$user, $password, $db);
    die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
  }
 ?>
+*/
+
+<?php
+$user = 'root';
+$password = 'root';
+$db = 'projekt';
+$host = 'localhost';
+
+$mysqli = new mysqli($host, $user, $password, $db);
+
+if (!$mysqli) {
+die('Connect Error('.mysqli_connect_errno().') '.mysqli_connect_error());
+}
+ ?>

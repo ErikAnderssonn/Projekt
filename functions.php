@@ -1,4 +1,6 @@
+
 <?php
+/*
 $user = 'root';
 $password = 'root';
 $db = 'Projekt';
@@ -10,7 +12,8 @@ $mysqli = new mysqli("$host:$port",$user, $password, $db);
  if (!$mysqli) {
    die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
  }
-
+*/
+include "connect.php";
 function unique_salt($length = 10) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
@@ -39,7 +42,7 @@ function validate_email($Mail)
 
   function saltQuery($email)
   {
-  	$query = "SELECT Salt FROM Användare WHERE Email = ('".$email."')";
+  	$query = "SELECT Salt FROM Användare WHERE Email = ('$email')";
   	$salt = $mysqli->query($query);
   	$row = $salt->fetch_assoc();
   	return $salt = $row['Salt'];
@@ -49,11 +52,13 @@ function validate_email($Mail)
 
   function pwQuery($email)
   {
-  	$query = "SELECT Password FROM Användare WHERE Email = ('".$email."')";
+  	$query = "SELECT Password FROM Användare WHERE Email = ('$email')";
   	$password = $mysqli->query($query);
   	$row = $password->fetch_assoc();
   	return $password = $row['Password'];
   }
+
+
 
 
  ?>
