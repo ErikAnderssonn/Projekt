@@ -34,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $ettPassword = ($_POST["lösenord"]);
 
     $salt = unique_salt();
-    $hash = sha1($unique_salt . $ettPassword);
+
+    $hash = md5($salt . $ettPassword);
 
 
     //__________________ För & Efternamn _______________
@@ -50,7 +51,7 @@ $result = $mysqli -> query($sql);
 
 
 //insertUserQuery($email, $hash, $unique_salt, $förnamn, $efternamn );
-header ("Refresh: 3; URL=index.php");
+//header ("Refresh: 3; URL=index.php");
 echo "User created!";
 
 

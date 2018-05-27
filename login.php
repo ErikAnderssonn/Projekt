@@ -9,9 +9,9 @@
       <button>create</button>
       <p class="message">Already registered? <a href="#">Sign In</a></p>
     </form>
-    <form class="login-form">
-      <input type="text" placeholder="Email"/>
-      <input type="password" placeholder="Lösenord"/>
+    <form class="login-form" action="loginDB.php" method="post">
+      <input type="text" name="email" placeholder="Email"/>
+      <input type="password" name="lösenord" placeholder="Lösenord"/>
       <button>Logga in</button>
       <p class="message">Inte medlem? <a href="CreateProfile.php">Skapa konto</a></p>
     </form>
