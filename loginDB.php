@@ -27,7 +27,7 @@ $hash = md5($salt . $pw);
 
 if (md5($salt . $pw) === $password)
 {
-  header("Refresh: 5; URL=LoggedIn.php");
+  header("Refresh: 2; URL=LoggedIn.php");
   echo "Du är inloggad!";
 }
 else
