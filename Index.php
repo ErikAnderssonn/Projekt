@@ -18,7 +18,7 @@
   </li>
 
   <li>
-    <input type="submit" class='mybutton' value="Sök ingredienser"/>
+    <input type="text" class="mybutton" name="search" placeholder="Sök recept">
   </li>
 
   <li>
