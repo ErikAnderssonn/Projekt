@@ -116,10 +116,43 @@ text-align: center;
   * {box-sizing: border-box}
 }
 
+#toprecept2
+{
+  border: 2px solid white;
+}
+
+#topreceptLegend
+{
+  font-family: times;
+  font-size: 25px;
+  color: white;
+}
 .image_shadow {
 border-radius: 30px;
 box-shadow: 5px 10px 10px rgba(0,0,0, 0.5);
 border: 3px solid white;
 border-radius: 5px;
 margin: 0px 4px 0px 4px;
+}
+
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+input{
+   text-align:center;
+}
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: white;
 }
